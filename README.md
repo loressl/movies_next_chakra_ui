@@ -10,6 +10,14 @@ Está aplicação foi desenvolvida com o intuito de fixar alguns tópicos, apren
   - [Chakra UI](https://chakra-ui.com/)
   - [React JS](https://pt-br.reactjs.org/)
 
+Os tópicos que foram estudados estão relacionados aos Next e são:
+
+  - **_getServerSideProps_**: é executado na camada do server e não do browser. É mais usados em situações mais dinâmicas onde precisa fazer uma chamada diferente para cada usuário logado, por exemplo, e não se sabe a quantidade.
+  - **_getStaticProps_**: é mais utilizado quando sabe a quantidade de dados que será carregado na tela, como exemplo posts de um blog. E um ponto interessante é que, na primeira vez que redenrizar a página, o Next salva o html como um arquivo físico de forma estática. Então, quando for atualizar a página, ao invés de fazer uma nova chamada, retorna o que foi salvo no _getStaticGeneration_, assim não precisa fazer do zero o que torna a página mais performática. Além disso, pode configurar para ser recarregado de tempos em tempos se for necessário.
+  - **_getStaticPaths_**: usado quando há utilização de rotas dinâmicas. Todas as rotas que forem salvas aqui, ocorrerá uma pré-renderização antes. Deve ser usado com o _getStaticProps_ e não pode ser usado com o _getServerSideProps_. É necessário passar um fallback que pode ser true, false ou blocking.
+
+Na aplicação foram utilizados apenas o _getStaticProps_ na Home, para o carregamento da lista de filmes, e o _getStaticPaths_, pois ao clicar em um dos cards dos filmes, o usuário é direcionado para a tela de detalhes. 
+
 ## :white_check_mark: Features
 
   - [x] Listar filmes
@@ -17,6 +25,10 @@ Está aplicação foi desenvolvida com o intuito de fixar alguns tópicos, apren
   - [x] Carregar mais filmes
   - [x] Exibir detalhes do filme  
 
-## ⚡ Tecnologias
+## :camera_flash: Telas
 
- ### :point_right: Next 
+### Home
+<img alt="ignit" src="screens/home.JPG" />
+
+### Details
+<img alt="ignit" src="screens/detail.JPG" />
