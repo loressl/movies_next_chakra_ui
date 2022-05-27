@@ -32,3 +32,8 @@ Na aplicação foram utilizados apenas o _getStaticProps_ na Home, para o carreg
 
 ### Details
 <img alt="ignit" src="screens/detail.JPG" />
+
+### Video
+
+
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
