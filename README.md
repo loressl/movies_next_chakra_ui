@@ -18,6 +18,8 @@ Os tópicos que foram estudados estão relacionados aos Next e são:
 
 Na aplicação foram utilizados apenas o _getStaticProps_ na Home, para o carregamento da lista de filmes, e o _getStaticPaths_, pois ao clicar em um dos cards dos filmes, o usuário é direcionado para a tela de detalhes. 
 
+API dos filmes: [TMDB](https://www.themoviedb.org/documentation/api)
+
 ## :white_check_mark: Features
 
   - [x] Listar filmes
@@ -34,6 +36,10 @@ Na aplicação foram utilizados apenas o _getStaticProps_ na Home, para o carreg
 <img alt="ignit" src="screens/detail.JPG" />
 
 ### Video
+
+
+
+https://user-images.githubusercontent.com/34512572/170806656-422eebef-0d1e-4a13-a160-9309f2e04723.mp4
 
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
