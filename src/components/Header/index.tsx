@@ -1,8 +1,12 @@
 import { Flex } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { Logo } from "./Logo";
 import { SearchBox } from "./SearchBox";
 
 export function Header() {
+    const { asPath } = useRouter()
+    const isDetail = asPath.includes('detail') 
+
     return(
         <Flex
             as="header"
@@ -23,7 +27,7 @@ export function Header() {
             borderBottomColor="teal.100"
         >
             <Logo/>
-            <SearchBox/>
+            {!isDetail && <SearchBox/>}
         </Flex>
     )
 }
