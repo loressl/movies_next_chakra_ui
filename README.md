@@ -27,6 +27,20 @@ API dos filmes: [TMDB](https://www.themoviedb.org/documentation/api)
   - [x] Carregar mais filmes
   - [x] Exibir detalhes do filme  
 
+## Instalação
+```bash
+yarn install
+# ou
+npm install
+```
+
+## Executar projeto
+```bash
+yarn dev
+# ou
+npm run dev
+```
+
 ## :camera_flash: Telas
 
 ### Home
