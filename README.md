@@ -30,16 +30,21 @@ API dos filmes: [TMDB](https://www.themoviedb.org/documentation/api)
 ## Instalação
 ```bash
 yarn install
-# ou
-npm install
 ```
 
 ## Executar projeto
 ```bash
 yarn dev
-# ou
-npm run dev
 ```
+
+## ENV LOCAL
+
+  - **NEXT_PUBLIC_API_KEY**: sua chave no TMDB.
+  - **NEXT_PUBLIC_TOKEN**: seu token no TMDB.
+  - **NEXT_PUBLIC_API**: api do TMDB.
+  - **NEXT_PUBLIC_URL_IMAGE**: api do TMDB que ao concatenar com o caminho final da imagem, permite mostrá-la.
+  - **NEXT_PUBLIC_LOGO**: https://fontmeme.com/permalink/220413/4a693157c3920dee0f02295a4628d603.png
+
 
 ## :camera_flash: Telas
 
@@ -50,7 +55,6 @@ npm run dev
 <img alt="ignit" src="screens/detail.JPG" />
 
 ### Video
-
 
 
 https://user-images.githubusercontent.com/34512572/170806656-422eebef-0d1e-4a13-a160-9309f2e04723.mp4
